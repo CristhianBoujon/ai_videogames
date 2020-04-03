@@ -8,7 +8,7 @@ from behavior_tree import (SelectorTypeNode, SequenceTypeNode, TaskNode,
 
 
 class CheckDoorNode(TaskNode):
-    """Task in which the agent look if the door is open."""
+    """Task in which the agent looks if the door is open."""
 
     def run(self):
         door_is_open = bool(random.randint(0, 1))
@@ -24,14 +24,14 @@ class CheckDoorNode(TaskNode):
 
 
 class OpenDoorNode(TaskNode):
-    """Task in which the agent open the door."""
+    """Task in which the agent opens the door."""
     def run(self):
         print('SUCCESS - Ok, the door is open now :)')
         return TaskStatus.SUCCESS
 
 
 class GetCloseNode(TaskNode):
-    """Task in which the agent get close to the door."""
+    """Task in which the agent gets close to the door."""
     def __init__(self):
         super(GetCloseNode, self).__init__()
         self.steps = 10 # Steps (distance) to the door

@@ -1,4 +1,4 @@
-# This module simule how a agent make decision of open a door based on a behavior tree.
+# This module simules how a agent makes decision to open a door based on a behavior tree.
 
 import random
 import time
